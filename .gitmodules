@@ -1,0 +1,3 @@
+[submodule "engine/base/gamera"]
+	path = engine/base/gamera
+	url = https://github.com/SuperFastFramework/gamera

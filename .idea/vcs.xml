@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/engine/base/flux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/engine/base/gamera" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/engine/base/moonshine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sff_love/base/moonshine" vcs="Git" />
+  </component>
+</project>
