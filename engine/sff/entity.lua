@@ -42,7 +42,8 @@ function anim()
         local frame =st+math.floor(self.tick)
 
         self.tick=self.tick+aspeed
-        if st+math.floor(self.tick) >= st+fq then
+        if frame >= st+fq then
+            frame = anim.first_fr
             if one_shot then
                 self.tick = self.tick-aspeed
                 callback()
@@ -78,9 +79,10 @@ function anim()
         a.pivotY = (zoomh*sff.sprite.pxUnit)/2
 
         a.quads={}
-        for i=first_fr, fr_cant do
+        local lastfrm = first_fr+fr_cant-1
+        for i=first_fr, lastfrm do
             -- I'm using table.insert instead of "add(" due to not caring for the deletion of this quads. And I can't add the idx onto the quad...
-            table.insert(a.quads, sff.sprite.getQuad(i, zoomw, zoomh) )
+            table.insert(a.quads, i, sff.sprite.getQuad(i, zoomw, zoomh) )
         end
 
         add(self.list, a)

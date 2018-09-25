@@ -9,6 +9,11 @@ function sff()
     sff.graphics = {}
     sff.gamepad = {}
   
+    sff.directions={}
+    sff.directions.UP=0
+    sff.directions.DOWN=1
+    sff.directions.LEFT=2
+    sff.directions.RIGHT=3
 
     -- ******** --
     -- Palettes --
