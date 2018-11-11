@@ -1,22 +1,28 @@
 require("engine.sff.entity")
+require("engine.base.gamepad")
 
-function entityName(x,y,parent)
+function hero(x,y,parent)
     local anim_obj=anim()
-    local w=1
-    local h=1
-    anim_obj:addAnim(starting_fr,frame_cnt,speed, w,h)
+    anim_obj:addAnim(1,4,0.05,1,1)  -- idle-side
+    anim_obj:addAnim(6,4,0.19,1,1)  -- side
+    anim_obj:addAnim(33,2,0.05,1,1) -- idle-up
+    anim_obj:addAnim(36,4,0.15,1,1) -- up
+    anim_obj:addAnim(17,4,0.05,1,1) -- idle-down
+    anim_obj:addAnim(22,4,0.15,1,1) -- down
 
     local e=entity(anim_obj)
     e:setpos(x,y)
     e:set_anim(1)
 
-    local bounds_obj=bbox(w*sff.sprite.pxUnit,h*sff.sprite.pxUnit)
+    local bounds_obj=bbox(8,16, -4,-8)
     e:set_bounds(bounds_obj)
     e.debugbounds=false
+    e.lastdir=sff.directions.RIGHT
+    e.curdir=sff.directions.RIGHT
     e.speed = 1
 
-    --[[
-    function e:topdownmovement()
+
+    function e:movement()
         self.lastdir=self.curdir
         -- Animation
         local moving = true
@@ -43,7 +49,7 @@ function entityName(x,y,parent)
             end
         end
 
-        -- movement
+        -- Movement
         if moving then
             local angle = 0
             if sff.gamepad.up then
@@ -79,13 +85,12 @@ function entityName(x,y,parent)
             self:setx(self.x + (math.cos(angle)*self.speed))
             self:sety(self.y + -(math.sin(angle)*self.speed))
         end
+
     end
-    ]]
 
     function e:update()
-        -- e:topdownmovement()
+        e:movement()
     end
-
 
     -- overwrite entity's draw() function
     -- e._draw=e.draw
@@ -97,4 +102,3 @@ function entityName(x,y,parent)
     add(parent, e)
     return e
 end
-
