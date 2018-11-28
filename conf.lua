@@ -1,11 +1,11 @@
 function love.conf(t)
     CONF = {}
     CONF.gameTitle  = "Game Title"
-    CONF.descr      = "Made for the Ludum Dare #4x"
+    CONF.descr      = "Made for the Ludum Dare #43"
     CONF.version = 0.1
     CONF.width   = 128
     CONF.height  = 128
-    CONF.cameraZoom = 6
+    CONF.cameraZoom = 5
 
     --[[ Proceed with caution below this line ]]--
     CONF.windowWidth  = (CONF.width * CONF.cameraZoom)

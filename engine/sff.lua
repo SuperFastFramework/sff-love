@@ -64,7 +64,8 @@ function sff()
     sff.fonts.quiver    = love.graphics.newFont("engine/fonts/Quiver.ttf",    16)
     sff.fonts.teatable  = love.graphics.newFont("engine/fonts/Teatable.ttf",  16)
     sff.fonts.trollmini = love.graphics.newFont("engine/fonts/Trollmini.ttf", 16)
-    
+    sff.fonts.pressStart2p = love.graphics.newFont("engine/fonts/PressStart2P.ttf", 16)
+
 
     -- ******* --
     -- Sprites --

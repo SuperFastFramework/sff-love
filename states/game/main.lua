@@ -12,7 +12,7 @@ function game()
     local h = hero(60, 60, ents)
     local m = mage(80, 60, ents)
     local dialogBox = dialogBox(ents)
-    dialogBox:setText("All this time I've been misguided...\nAlgol gato pardo")
+    dialogBox:setText("All this time I've been misguided, point place...\nAlgol gato pardo")
 
     local paused = false
     sff.gamepad.enterCallback = function() paused = not paused end
@@ -37,11 +37,13 @@ function game()
         love.graphics.rectangle("fill", 0, 0, CONF.width, CONF.height)
         love.graphics.setColor(sff.palette[9])
 
+        -- TODO: sort by Y value
         if not paused then
             for i = 1, #ents do
                 ents[i]:draw()
             end
         else
+            love.graphics.setFont(sff.fonts.teatable)
             love.graphics.printf("PAUSE", 0, 0, CONF.width, "center")
         end
     end
