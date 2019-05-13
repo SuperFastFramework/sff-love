@@ -14,8 +14,8 @@ function love.load()
     camera:setScale(CONF.cameraZoom)
     camera:setPosition(-1*(CONF.windowWidth/CONF.cameraZoom),-1*(CONF.windowHeight/CONF.cameraZoom))
 
-    sff.curstate=splash_screen()
-    --sff.curstate=game()
+    --sff.curstate=splash_screen()
+    sff.curstate=game()
 end
 
 function love.update(dt)

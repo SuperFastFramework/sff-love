@@ -19,10 +19,10 @@ function hero(x,y,parent)
     e.debugbounds=false
     e.lastdir=sff.directions.RIGHT
     e.curdir=sff.directions.RIGHT
-    e.speed = 1
+    e.speed = 50
 
 
-    function e:movement()
+    function e:movement(dt)
         self.lastdir=self.curdir
         -- Animation
         local moving = true
@@ -82,14 +82,14 @@ function hero(x,y,parent)
                 end
             end
 
-            self:setx(self.x + (math.cos(angle)*self.speed))
-            self:sety(self.y + -(math.sin(angle)*self.speed))
+            self:setx(self.x + (math.cos(angle)*self.speed)*dt)
+            self:sety(self.y + -(math.sin(angle)*self.speed)*dt)
         end
 
     end
 
-    function e:update()
-        e:movement()
+    function e:update(dt)
+        e:movement(dt)
     end
 
     -- overwrite entity's draw() function

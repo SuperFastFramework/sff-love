@@ -15,7 +15,7 @@ function entityName(x,y,parent)
     e.debugbounds=false
     e.speed = 1
 
-    function e:update()
+    function e:update(dt)
     end
 
     -- overwrite entity's draw() function

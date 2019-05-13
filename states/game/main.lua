@@ -22,7 +22,7 @@ function game()
     function s:update(dt)
         if not paused then
             for i = 1, #ents do
-                ents[i]:update()
+                ents[i]:update(dt)
             end
         end
 
