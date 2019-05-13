@@ -3,16 +3,16 @@ require("engine.base.gamepad")
 
 function hero(x,y,parent)
     local anim_obj=anim()
-    anim_obj:addAnim(1,4,0.05,1,1)  -- idle-side
-    anim_obj:addAnim(6,4,0.19,1,1)  -- side
-    anim_obj:addAnim(33,2,0.05,1,1) -- idle-up
-    anim_obj:addAnim(36,4,0.15,1,1) -- up
-    anim_obj:addAnim(17,4,0.05,1,1) -- idle-down
-    anim_obj:addAnim(22,4,0.15,1,1) -- down
+    anim_obj:addAnim("idle-side", 1,4,0.05,1,1)
+    anim_obj:addAnim("side", 6,4,0.19,1,1)
+    anim_obj:addAnim("idle-up", 33,2,0.05,1,1)
+    anim_obj:addAnim("up",36,4,0.15,1,1)
+    anim_obj:addAnim("idle-down", 17,4,0.05,1,1)
+    anim_obj:addAnim("down", 22,4,0.15,1,1)
 
     local e=entity(anim_obj)
     e:setpos(x,y)
-    e:set_anim(1)
+    e:set_anim("idle-side")
 
     local bounds_obj=bbox(8,16, -4,-8)
     e:set_bounds(bounds_obj)
@@ -27,25 +27,25 @@ function hero(x,y,parent)
         -- Animation
         local moving = true
         if sff.gamepad.right then
-            self:set_anim(2) --side
+            self:set_anim("side")
             self.curdir = sff.directions.RIGHT
         elseif sff.gamepad.left then
-            self:set_anim(2) --side
+            self:set_anim("side")
             self.curdir = sff.directions.LEFT
         elseif sff.gamepad.up then
-            self:set_anim(4) --up
+            self:set_anim("up")
             self.curdir = sff.directions.UP
         elseif sff.gamepad.down then
-            self:set_anim(6) --down
+            self:set_anim("down")
             self.curdir = sff.directions.DOWN
         else
             moving = false
             if self.lastdir == sff.directions.RIGHT or self.lastdir == sff.directions.LEFT then
-                self:set_anim(1) --idle-sides
+                self:set_anim("idle-side")
             elseif self.lastdir == sff.directions.UP then
-                self:set_anim(3) --idle-up
+                self:set_anim("idle-up")
             elseif self.lastdir == sff.directions.DOWN then
-                self:set_anim(5) --idle-down
+                self:set_anim("idle-down")
             end
         end
 

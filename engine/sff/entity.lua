@@ -33,7 +33,7 @@ function anim()
     a.list={}
     a.current=false
     a.tick=0
-    -- private
+
     function a:_getCurQuad(one_shot, callback)
         local anim=self.current
         local aspeed=anim.speed
@@ -55,46 +55,43 @@ function anim()
         return anim.quads[frame]
     end
 
-    -- public
-    function a:set_anim(idx)
-        if self.currentidx == nil or idx ~= self.currentidx then
+    function a:set_anim(name)
+        if self.current == false or name ~= self.currentName then
             self.tick=0 -- avoids sharing ticks between animations
         end
 
-        self.current=self.list[idx]
-        self.currentidx=idx
-
+        self.current = self.list[name]
+        self.currentName = name
     end
 
-    function a:addAnim(first_fr, fr_cant, speed, zoomw, zoomh, one_shot, callback)
-        local a={}
-        a.first_fr=first_fr
-        a.fr_cant=fr_cant
-        a.speed=speed
-        a.w=zoomw
-        a.h=zoomh
-        a.callback=callback or function()end
-        a.one_shot=one_shot or false
-        a.pivotX = (zoomw*sff.sprite.pxUnit)/2
-        a.pivotY = (zoomh*sff.sprite.pxUnit)/2
+    function a:addAnim(name, first_fr, fr_cant, speed, zoomw, zoomh, one_shot, callback)
+        local anim ={}
+        anim.name = name
+        anim.first_fr=first_fr
+        anim.fr_cant=fr_cant
+        anim.speed=speed
+        anim.w=zoomw
+        anim.h=zoomh
+        anim.callback=callback or function()end
+        anim.one_shot=one_shot or false
+        anim.pivotX = (zoomw*sff.sprite.pxUnit)/2
+        anim.pivotY = (zoomh*sff.sprite.pxUnit)/2
 
-        a.quads={}
+        anim.quads={}
         local lastfrm = first_fr+fr_cant-1
         for i=first_fr, lastfrm do
             -- I'm using table.insert instead of "add(" due to not caring for the deletion of this quads. And I can't add the idx onto the quad...
-            table.insert(a.quads, i, sff.sprite.getQuad(i, zoomw, zoomh) )
+            table.insert(anim.quads, i, sff.sprite.getQuad(i, zoomw, zoomh) )
         end
 
-        add(self.list, a)
+        self.list[name] = anim
     end
 
     -- this must be called in the _draw() function
     function a:draw(x,y,flipx,flipy)
         local anim=self.current
         if not anim then
-            rectfill(0,117, 128,128, 8)
-            print("err: obj without animation!!!", 2, 119, 10)
-            return
+            error("err: obj without animation!!! animName: "..self.currentName,3)
         end
 
         local doFlipX = 1

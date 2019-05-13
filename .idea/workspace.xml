@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cbf5e6-57af-4af4-a5fa-303c926bbf66" name="Default Changelist" comment="Small refactor&#10;Added a mage and a dialog box component WIP">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Love2D_Start.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/fonts/PressStart2P.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dialogbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dialogbox.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.lua" beforeDir="false" afterPath="$PROJECT_DIR$/conf.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/sff.lua" beforeDir="false" afterPath="$PROJECT_DIR$/engine/sff.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/entities/dialogBox.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/game/entities/dialogBox.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/game/main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/sff/entity.lua" beforeDir="false" afterPath="$PROJECT_DIR$/engine/sff/entity.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/game/entities/hero.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/game/entities/hero.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/game/entities/mage.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/game/entities/mage.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/entity.lua" beforeDir="false" afterPath="$PROJECT_DIR$/templates/entity.lua" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,64 +31,22 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="2126321040">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="36" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="11" />
-          <entry key="project.open.time.10" value="5" />
-          <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="36" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="lua" value="93" />
-          <entry key="md" value="3" />
-          <entry key="png" value="13" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="13" />
-          <entry key="Lua" value="93" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="lua" value="7533" />
-          <entry key="txt" value="184" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Lua" value="7533" />
-          <entry key="PLAIN_TEXT" value="184" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="252">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine/sff.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-555">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -98,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/states/menu/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="588">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -107,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/entity.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="399">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -116,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/states/game/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+            <state relative-caret-position="444">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -139,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/states/game/entities/mage.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="135">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -148,8 +104,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/states/game/entities/hero.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="903">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+              <folding>
+                <element signature="e#1065#1550#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,10 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>resolutionWidth</find>
-      <find>getQuad</find>
-      <find>pxUnit</find>
-      <find>love.graphics.setColor</find>
       <find>love.graphics.setColor(</find>
       <find>setColor(</find>
       <find>flux</find>
@@ -174,7 +138,6 @@
       <find>speech</find>
       <find>logo</find>
       <find>for i=</find>
-      <find>addAnim</find>
       <find>fr_cant</find>
       <find>fr</find>
       <find>anim.quads</find>
@@ -188,6 +151,11 @@
       <find>gamepad</find>
       <find>setColor</find>
       <find>fonts</find>
+      <find>addAnim</find>
+      <find>rectfill</find>
+      <find>rectangle</find>
+      <find>set_anim</find>
+      <find>current</find>
     </findStrings>
     <replaceStrings>
       <replace>width</replace>
@@ -214,26 +182,20 @@
         <option value="$PROJECT_DIR$/assets/sheetIdx/conf.lua" />
         <option value="$PROJECT_DIR$/assets/sheetIdx/main.lua" />
         <option value="$PROJECT_DIR$/templates/state.lua" />
-        <option value="$PROJECT_DIR$/engine/sff/entity.lua" />
-        <option value="$PROJECT_DIR$/main.lua" />
-        <option value="$PROJECT_DIR$/states/game/entities/mage.lua" />
-        <option value="$PROJECT_DIR$/templates/entity.lua" />
         <option value="$PROJECT_DIR$/states/game/entities/dialogElement.lua" />
         <option value="$PROJECT_DIR$/states/game/helpers/dialogElement.lua" />
         <option value="$PROJECT_DIR$/states/menu/main.lua" />
         <option value="$PROJECT_DIR$/engine/sff.lua" />
         <option value="$PROJECT_DIR$/states/game/entities/dialogBox.lua" />
         <option value="$PROJECT_DIR$/conf.lua" />
+        <option value="$PROJECT_DIR$/main.lua" />
         <option value="$PROJECT_DIR$/states/game/main.lua" />
+        <option value="$PROJECT_DIR$/states/game/entities/mage.lua" />
+        <option value="$PROJECT_DIR$/templates/entity.lua" />
+        <option value="$PROJECT_DIR$/engine/sff/entity.lua" />
         <option value="$PROJECT_DIR$/states/game/entities/hero.lua" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="28" />
@@ -250,65 +212,41 @@
         <subPane>
           <expand>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
               <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="sff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SFFL2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SFFL2D" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
+              <item name="states" type="462c0819:PsiDirectoryNode" />
+              <item name="splash_screen" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,12 +258,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GO_FMT" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="task&#9;ACTION&#9;tasks.and.contexts&#10;settings&#9;ACTION&#9;Database.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543106199609" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.lua" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -334,14 +274,14 @@
     <property name="settings.editor.selected.configurable" value="tasks" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/states/game/helpers" />
-      <recent name="$PROJECT_DIR$/assets/splash" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/engine/fonts" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/states/game/entities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/states/game/helpers" />
+      <recent name="$PROJECT_DIR$/assets/splash" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,6 +343,9 @@
       <workItem from="1542112763717" duration="84000" />
       <workItem from="1543073476278" duration="6469000" />
       <workItem from="1543156410164" duration="457000" />
+      <workItem from="1557723225582" duration="1530000" />
+      <workItem from="1557779971977" duration="225000" />
+      <workItem from="1557780226821" duration="2481000" />
     </task>
     <task id="LOCAL-00001" summary="Added top down movement including diagonal movement.&#10;Added 4 direction sprites (up, down, left/right).&#10;Fixed animations">
       <created>1537879893060</created>
@@ -431,7 +374,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101141000" />
+    <option name="totallyTimeSpent" value="105377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,10 +386,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-5" width="1920" height="1085" extended-state="6" />
+    <frame x="0" y="-10" width="1920" height="1090" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14407684" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14887941" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -461,12 +404,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.31857452" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.51629865" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.5152151" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32912722" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24763903" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32983193" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="LuaCheck" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -477,6 +421,9 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32977587" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="SciView" order="11" />
+      <window_info anchor="right" id="rails-model-fields" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,9 +454,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -526,21 +484,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/engine/base/flux.lua" />
-    <entry file="file://$PROJECT_DIR$/../loveAnim/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../loveAnim/main.lua" />
     <entry file="file://$PROJECT_DIR$/engine/base/camera.lua" />
-    <entry file="file://$PROJECT_DIR$/engine/base/gamera/gamera.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine/base/flux/README.md" />
     <entry file="file://$PROJECT_DIR$/engine/base/flux/flux.lua" />
     <entry file="file://$PROJECT_DIR$/assets/gamepad.png">
@@ -589,9 +534,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/pkmon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/pkmon.png" />
     <entry file="file://$PROJECT_DIR$/templates/state.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -599,30 +542,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/states/game/helpers/dialogElement.lua" />
-    <entry file="file://$PROJECT_DIR$/engine/base/helpers.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/dialogbox.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/sff.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="66" column="86" selection-start-line="66" selection-start-column="86" selection-end-line="66" selection-end-column="86" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sheet.png">
       <provider selected="true" editor-type-id="images" />
@@ -636,37 +558,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engine/base/gamepad.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="734">
           <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.lua">
+    <entry file="file://$PROJECT_DIR$/engine/base/helpers.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="357">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/states/menu/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="588">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/entity.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/assets/arne16.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/main.lua">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-        </state>
+        <state relative-caret-position="-2610" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf.lua">
@@ -676,20 +592,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/arne16.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/engine/base/gamera/gamera.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states/game/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/sff.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/states/game/entities/mage.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/entity.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+          <folding>
+            <element signature="e#1065#1550#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/states/game/entities/hero.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="903">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
         </state>
       </provider>
     </entry>
