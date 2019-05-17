@@ -6,24 +6,33 @@ gamera = require("engine.base.gamera.gamera")
 require("states.game.main")
 
 function love.load()
-    --if arg[#arg] == "-debug" then require("mobdebug").start() end     -- allow debugging
+    -- allow debugging
+    --if arg[#arg] == "-debug" then require("mobdebug").start() end
     love.graphics.setDefaultFilter("nearest", "nearest") -- avoid blurry pixel art
     sff = sff()
 
-    camera = gamera.new(0, 0, 2000, 2000) -- set world dimensions
+    local worldWidth = 2000
+    local worldHeight = 2000
+
+    camera = gamera.new(0, 0, worldWidth, worldHeight)
     camera:setScale(CONF.cameraZoom)
     camera:setPosition(-1*(CONF.windowWidth/CONF.cameraZoom),-1*(CONF.windowHeight/CONF.cameraZoom))
 
-    --sff.curstate=splash_screen()
-    sff.curstate=game()
+    cameraHud = gamera.new(0, 0, worldWidth, worldHeight)
+    cameraHud:setScale(CONF.cameraZoom)
+    cameraHud:setPosition(0,0)
+
+    sff.curstate=splash_screen()
+    --sff.curstate=game()
 end
 
 function love.update(dt)
     sff.curstate:update(dt)
 end
 
-function love.draw(dt)
+function love.draw()
     love.graphics.setColor(1, 1, 1, 1)
-    camera:draw(function() sff.curstate:draw(dt) end)
+    camera:draw(function() sff.curstate:draw() end)
+    cameraHud:draw(function() sff.curstate:drawHud() end)
 end
 

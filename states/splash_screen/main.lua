@@ -57,5 +57,8 @@ function splash_screen()
         end
     end
 
+    function s:drawHud()
+    end
+
     return s
 end

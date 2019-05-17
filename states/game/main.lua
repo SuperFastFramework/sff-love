@@ -6,13 +6,14 @@ require("states.game.entities.dialogBox")
 function game()
     local s = {}
     local ents = {}
+    local hud = {}
     sff.gamepad.clear()
     love.graphics.setFont(sff.fonts.teatable)
 
     local h = hero(60, 60, ents)
     local m = mage(80, 60, ents)
-    local dialogBox = dialogBox(ents)
-    dialogBox:setText("All this time I've been misguided, point place...\nAlgol gato pardo")
+    local dialogBox = dialogBox(hud)
+    dialogBox:setText("Test text hello one two...\nhouse cat mother")
 
     local paused = false
     sff.gamepad.enterCallback = function() paused = not paused end
@@ -45,6 +46,12 @@ function game()
         else
             love.graphics.setFont(sff.fonts.teatable)
             love.graphics.printf("PAUSE", 0, 0, CONF.width, "center")
+        end
+    end
+
+    function s:drawHud()
+        for i = 1, #hud do
+            hud[i]:draw()
         end
     end
 

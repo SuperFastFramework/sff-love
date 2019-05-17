@@ -22,24 +22,9 @@ function menu()
     local gamepadImg = love.graphics.newImage("assets/gamepad.png")
     love.graphics.setFont(sff.fonts.teatable)
 
-    -- flux.to(middleBkg, 0.4, {y1 = 7, y2 = 8})
-    -- :oncomplete(
-    --     function()
-    --         flux.to(textAlpha, 1, {a=1})
-    --     end
-    -- )
-
     sff.gamepad.enterCallback = function()
-        -- flux.to(textAlpha, 0.3, {a=0})
-        -- flux.to(middleBkg, 0.3, {y1 = 200, y2 = 200})
-        -- :delay(0.3)
-        -- :oncomplete(
-        --     function()
-        --
-        --         -- switch state
-                 sff.curstate = game()
-        --     end
-        -- )
+        -- switch state
+        sff.curstate = game()
     end
 
     function s:update(dt)
@@ -54,13 +39,24 @@ function menu()
 
         -- title
         love.graphics.setColor(titleColor)
-        love.graphics.print(CONF.gameTitle, (CONF.width/2)-30, 15)
-
-        -- press to start
-        love.graphics.print("Press enter to start", (CONF.width/2)-50, 80)
+        love.graphics.printf(CONF.gameTitle, 0, 5, CONF.width, "center")
 
         -- gamepad img
         love.graphics.draw(gamepadImg, (CONF.width/2)+swing-49, CONF.height-25)
+
+        -- subtitle
+        local scale=0.7
+        local w = CONF.width/scale
+        love.graphics.scale(scale)
+        love.graphics.printf(CONF.subTitle, 0, 25/scale, w, "center")
+
+        -- press to start
+        love.graphics.printf("Press enter to start", 0, 80/scale, w, "center")
+
+        love.graphics.scale(1)
+    end
+
+    function s:drawHud()
     end
 
     return s

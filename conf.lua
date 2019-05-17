@@ -1,7 +1,7 @@
 function love.conf(t)
     CONF = {}
     CONF.gameTitle  = "Game Title"
-    CONF.descr      = "Made for the Ludum Dare #xx"
+    CONF.subTitle   = "Subtitle"
     CONF.version = 0.1
     CONF.width   = 128
     CONF.height  = 128
