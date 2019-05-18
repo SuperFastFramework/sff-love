@@ -25,6 +25,10 @@ function entityName(x,y,parent)
     --     ** your code here **
     -- end
 
+    function e:destroy()
+        del(parent, e)
+    end
+
     add(parent, e)
     return e
 end

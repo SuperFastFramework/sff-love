@@ -6,6 +6,7 @@ function love.conf(t)
     CONF.width   = 128
     CONF.height  = 128
     CONF.cameraZoom = 5
+    CONF.env = "development" -- "release"
 
     --[[ Proceed with caution below this line ]]--
     CONF.windowWidth  = (CONF.width * CONF.cameraZoom)

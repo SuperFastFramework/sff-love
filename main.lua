@@ -22,8 +22,12 @@ function love.load()
     cameraHud:setScale(CONF.cameraZoom)
     cameraHud:setPosition(0,0)
 
-    sff.curstate=splash_screen()
-    --sff.curstate=game()
+    if CONF.env == "release" then
+        sff.curstate=splash_screen()
+    else
+        sff.curstate=menu()
+        --sff.curstate=game()
+    end
 end
 
 function love.update(dt)

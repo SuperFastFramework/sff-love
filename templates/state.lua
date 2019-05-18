@@ -1,6 +1,4 @@
-require("engine.sff.entity")
-
-function game()
+function stateName()
     local s={}
     sff.gamepad.clear()
 
