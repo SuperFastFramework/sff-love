@@ -2,6 +2,7 @@ require("engine.sff.collision")
 require("states.game.entities.hero")
 require("states.game.entities.mage")
 require("states.game.entities.dialogBox")
+require("engine.sff.explosions")
 
 function game()
     local s = {}
@@ -19,6 +20,9 @@ function game()
     sff.gamepad.enterCallback = function() paused = not paused end
     -- sff.gamepad.aCallback     =
     -- sff.gamepad.bCallback     =
+
+    local explosions = explosions(ents)
+    explosions:multiexplode(20,20)
 
     function s:update(dt)
         if not paused then
