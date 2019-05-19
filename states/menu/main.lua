@@ -30,12 +30,23 @@ function menu()
         fg=9, bg=2, sh=3, y=80,
         bordered=false, shadowed=false,
         font=sff.fonts.teatable, centerx=true, scale=0.7,
-        blink=true, on_time=20, off_time=6
+        blink=true, on_time=30, off_time=15
+    })
+
+    local mytext = tutils({
+        text="This is a long text, for testing various stuff.",
+        fg=9, bg=2, sh=3,
+        y=50, centerx=true, centery=true,
+        bordered=true, shadowed=false,
+        font=sff.fonts.teatable, scale=0.7,
+        blink=false, on_time=30, off_time=15,
+        retro=true, retro_speed=7
     })
 
     add(texts, title)
     add(texts, enterToStart)
     add(texts, subtitle)
+    add(texts, mytext)
 
     sff.gamepad.enterCallback = function()
         -- switch state

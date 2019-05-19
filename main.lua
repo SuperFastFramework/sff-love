@@ -6,8 +6,6 @@ gamera = require("engine.base.gamera.gamera")
 require("states.game.main")
 
 function love.load()
-    -- allow debugging
-    --if arg[#arg] == "-debug" then require("mobdebug").start() end
     love.graphics.setDefaultFilter("nearest", "nearest") -- avoid blurry pixel art
     sff = sff()
 
@@ -25,6 +23,9 @@ function love.load()
     if CONF.env == "release" then
         sff.curstate=splash_screen()
     else
+        if arg[#arg] == "-debug" then require("mobdebug").start() end -- allow debugging
+        io.stdout:setvbuf("no")
+
         sff.curstate=menu()
         --sff.curstate=game()
     end
