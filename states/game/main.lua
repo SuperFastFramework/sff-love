@@ -1,5 +1,6 @@
 require("engine.sff.collision")
 require("states.game.entities.hero")
+require("states.game.entities.car")
 require("states.game.entities.mage")
 require("states.game.entities.dialogBox")
 require("engine.sff.explosions")
@@ -11,7 +12,7 @@ function game()
     sff.gamepad.clear()
     love.graphics.setFont(sff.fonts.teatable)
 
-    local h = hero(60, 60, ents)
+    local h = car(60,60,ents)--hero(60, 60, ents)
     local m = mage(80, 60, ents)
     local dialogBox = dialogBox(hud)
     dialogBox:setText("Test text hello one two...\nhouse cat mother")
@@ -43,19 +44,23 @@ function game()
         love.graphics.setColor(sff.palette[9])
 
         -- TODO: sort by Y value
-        if not paused then
-            for i = 1, #ents do
-                ents[i]:draw()
-            end
-        else
-            love.graphics.setFont(sff.fonts.teatable)
-            love.graphics.printf("PAUSE", 0, 0, CONF.width, "center")
+        for i = 1, #ents do
+            ents[i]:draw()
         end
     end
 
     function s:drawHud()
         for i = 1, #hud do
             hud[i]:draw()
+        end
+
+        if paused then
+            love.graphics.push()
+            love.graphics.setFont(sff.fonts.teatable)
+            love.graphics.setColor(sff.palette[8])
+            love.graphics.scale(5)
+            love.graphics.printf("PAUSE", 0, 0, CONF.width, "center")
+            love.graphics.pop()
         end
     end
 

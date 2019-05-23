@@ -98,10 +98,10 @@ function anim()
         local doFlipY = 1
         if flipx then doFlipX = -1 end
         if flipy then doFlipY = -1 end
-
-        love.graphics.draw(sff.sprite.sheet , self:_getCurQuad(self.current.one_shot, self.current.callback),
-            x, y, 0, doFlipX, doFlipY, anim.pivotX, anim.pivotY)
-    end
+        local angle = self.angle or 0
+         love.graphics.draw(sff.sprite.sheet , self:_getCurQuad(self.current.one_shot, self.current.callback),
+        x, y, angle, doFlipX, doFlipY, anim.pivotX, anim.pivotY)
+        end
 
     return a
 end
