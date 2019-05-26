@@ -5,7 +5,7 @@ function mage(x,y,parent)
     local anim_obj=anim()
     local w=1
     local h=1
-    anim_obj:addAnim("idle", 49,1,0.01, w,h)
+    anim_obj:addAnim("idle", 97,1,0.01, w,h)
 
     local e=entity(anim_obj)
     e:setpos(x,y)

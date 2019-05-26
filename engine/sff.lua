@@ -71,8 +71,8 @@ function sff()
     -- Sprites --
     -- ******* --
     sff.sprite.sheet  = love.graphics.newImage('assets/sheet.png') -- all sprites must be here
-    sff.sprite.sheetW = 128
-    sff.sprite.sheetH = 128
+    sff.sprite.sheetW = 256
+    sff.sprite.sheetH = 256
     sff.sprite.pxUnit = 8           -- 8 pixels is the minimum unit
 
     -- Returns a Quad containing the sprite area

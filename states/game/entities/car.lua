@@ -1,11 +1,15 @@
 require("engine.sff.entity")
 require("engine.base.gamepad")
 
+--[[
+WIP
+]]--
+
 function car(x,y,parent)
     local anim_obj=anim()
-    anim_obj:addAnim("top", 51,1,1,1,1)
-    anim_obj:addAnim("side", 50,1,1,1,1)
-    anim_obj:addAnim("down", 52,1,1,1,1)
+    anim_obj:addAnim("top", 99,1,1,1,1)
+    anim_obj:addAnim("side", 98,1,1,1,1)
+    anim_obj:addAnim("down", 100,1,1,1,1)
 
     local e=entity(anim_obj)
     e:setpos(x,y)
