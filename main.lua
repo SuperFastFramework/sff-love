@@ -27,7 +27,6 @@ function love.load()
         io.stdout:setvbuf("no")
 
         sff.curstate=menu()
-        --sff.curstate=game()
     end
 end
 

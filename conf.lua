@@ -6,7 +6,7 @@ function love.conf(t)
     CONF.width   = 128
     CONF.height  = 128
     CONF.cameraZoom = 5
-    CONF.env = "development" -- "release"
+    CONF.release = true
 
     --[[ Proceed with caution below this line ]]--
     CONF.windowWidth  = (CONF.width * CONF.cameraZoom)
@@ -19,4 +19,9 @@ function love.conf(t)
     t.window.fullscreen = false
     t.console = true    -- for logging to stdout
     t.version = "0.10.0"
+    if CONF.release then
+        CONF.env = "release"
+    else
+        CONF.env = "development"
+    end
 end
