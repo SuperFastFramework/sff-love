@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83cbf5e6-57af-4af4-a5fa-303c926bbf66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.lua" beforeDir="false" afterPath="$PROJECT_DIR$/conf.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/main.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/entities/car.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/entities/dialogBox.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/entities/hero.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/entities/mage.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/game/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/game/main.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/menu/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/states/menu/main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/sff/entity.lua" beforeDir="false" afterPath="$PROJECT_DIR$/engine/sff/entity.lua" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/states/game/main.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="609">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -59,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine/sff/explosions.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-474">
+            <state relative-caret-position="21">
               <caret line="1" column="26" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
@@ -68,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine/sff.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="945">
               <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
             </state>
           </provider>
@@ -77,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="493">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
@@ -86,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/states/splash_screen/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
+            <state relative-caret-position="1281">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
@@ -96,25 +89,25 @@
         <entry file="file://$PROJECT_DIR$/states/menu/main.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="966">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conf.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2121">
-              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+            <state relative-caret-position="430">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -189,7 +182,6 @@
         <option value="$PROJECT_DIR$/engine/sff/tutils.lua" />
         <option value="$PROJECT_DIR$/engine/base/helpers.lua" />
         <option value="$PROJECT_DIR$/engine/sff/explosions.lua" />
-        <option value="$PROJECT_DIR$/engine/sff/entity.lua" />
         <option value="$PROJECT_DIR$/engine/sff.lua" />
         <option value="$PROJECT_DIR$/states/game/entities/mage.lua" />
         <option value="$PROJECT_DIR$/states/game/entities/hero.lua" />
@@ -198,6 +190,7 @@
         <option value="$PROJECT_DIR$/states/menu/main.lua" />
         <option value="$PROJECT_DIR$/states/game/main.lua" />
         <option value="$PROJECT_DIR$/conf.lua" />
+        <option value="$PROJECT_DIR$/engine/sff/entity.lua" />
       </list>
     </option>
   </component>
@@ -222,32 +215,25 @@
             <path>
               <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
               <item name="sff-love" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
               <item name="sff-love" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
               <item name="sff-love" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sff-love" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sff-love" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-              <item name="splash_screen" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="sff" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,7 +339,8 @@
       <workItem from="1558478701394" duration="2875000" />
       <workItem from="1558577052318" duration="1338000" />
       <workItem from="1558809066076" duration="5577000" />
-      <workItem from="1558888098632" duration="1682000" />
+      <workItem from="1558888098632" duration="3562000" />
+      <workItem from="1559008631145" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Added top down movement including diagonal movement.&#10;Added 4 direction sprites (up, down, left/right).&#10;Fixed animations">
       <created>1537879893060</created>
@@ -468,12 +455,19 @@
       <option name="project" value="LOCAL" />
       <updated>1558847634150</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Master cleanup.">
+      <created>1558891678162</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558891678163</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <option name="createBranch" value="false" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169379000" />
+    <option name="totallyTimeSpent" value="171286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,7 +482,7 @@
     <frame x="0" y="2" width="1920" height="1078" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1696905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17129135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,13 +492,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32983193" />
-      <window_info active="true" anchor="bottom" id="Run" internal_type="SLIDING" order="2" visible="true" weight="0.17913593" />
+      <window_info anchor="bottom" id="Run" internal_type="SLIDING" order="2" weight="0.17913593" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2507903" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.31857452" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.4077977" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.40756303" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2297155" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32983193" />
@@ -586,7 +580,8 @@
     <MESSAGE value="Fixed explisions" />
     <MESSAGE value="Fixed pause menu.&#10;Added car template WIP" />
     <MESSAGE value="Updated sheet from 128x128 to 256x256" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated sheet from 128x128 to 256x256" />
+    <MESSAGE value="Master cleanup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Master cleanup." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -629,9 +624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/pkmon.png" />
     <entry file="file://$PROJECT_DIR$/states/game/helpers/dialogElement.lua" />
-    <entry file="file://$PROJECT_DIR$/assets/dialogbox.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dialogbox.png" />
     <entry file="file://$PROJECT_DIR$/engine/base/gamera/gamera.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -681,16 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/entities/dialogBox.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/arne16.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/states/game/entities/dialogBox.lua" />
     <entry file="file://$PROJECT_DIR$/engine/base/helpers.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -715,9 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sheet.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/love-api/love.graphics.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -725,59 +706,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/entities/mage.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/states/game/entities/mage.lua" />
+    <entry file="file://$PROJECT_DIR$/states/game/entities/hero.lua" />
+    <entry file="file://$PROJECT_DIR$/states/game/entities/car.lua" />
+    <entry file="file://$PROJECT_DIR$/assets/arne16.png" />
+    <entry file="file://$PROJECT_DIR$/assets/sheet.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/entities/hero.lua">
+    <entry file="file://$PROJECT_DIR$/states/game/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2121">
-          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/entities/car.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/states/splash_screen/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/states/menu/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/sff/explosions.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="609">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -788,24 +727,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/sff.lua">
+    <entry file="file://$PROJECT_DIR$/engine/sff/explosions.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/sff.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
           <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/states/game/main.lua">
+    <entry file="file://$PROJECT_DIR$/states/splash_screen/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="1281">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states/menu/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/sff/entity.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>

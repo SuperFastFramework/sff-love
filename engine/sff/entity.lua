@@ -80,8 +80,10 @@ function anim()
         anim.quads={}
         local lastfrm = first_fr+fr_cant-1
         for i=first_fr, lastfrm do
+            local col = anim.first_fr + (zoomw * (i-anim.first_fr))
+
             -- I'm using table.insert instead of "add(" due to not caring for the deletion of this quads. And I can't add the idx onto the quad...
-            table.insert(anim.quads, i, sff.sprite.getQuad(i, zoomw, zoomh) )
+            table.insert(anim.quads, i, sff.sprite.getQuad(col, zoomw, zoomh) )
         end
 
         self.list[name] = anim
